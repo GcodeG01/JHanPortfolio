@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <link rel="stylesheet" href="./css/main.min.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+
+   <title>Portfolio: About</title>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+
+</head>
+<body class="body-about">
+
+  <div class="opening" style="background-color:#ff0000;"></div>
+
+  <div class="sub-nav">
+    <div class="sub-nav__logo">
+      <a href="./home.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 504 648">
+          <path d="M0 45v558a45 45 0 0 0 45 45h414a45 45 0 0 0 45-45V45a45 45 0 0 0-45-45H45A45 45 0 0 0 0 45zm387.5 530.5h-27L288 477l.5 98.5h-72v-71.37h-72v71.37h-27a45 45 0 0 1-45-45V117a45 45 0 0 1 45-45h270a45 45 0 0 1 45 45v413.5a45 45 0 0 1-45 45z" fill="#ff0000"/>
+          <path d="M144.5 189v242.5h72v-73h72L360 460l.43-270.93A45 45 0 0 0 315.5 144h-126a45 45 0 0 0-45 45zm144 98.5h-72v-72h72z" fill="#ff0000"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="sub-nav__title">
+      <h2 class="about-title">
+        About me
+      </h2>
+    </div>
+  </div>
+
+  
+  <div class="flip-card">
+
+    <figure class="flip-card-inner">
+
+        <figure class="card-front">
+            <span>Joseph</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 504 648">
+              <path d="M0 45v558a45 45 0 0 0 45 45h414a45 45 0 0 0 45-45V45a45 45 0 0 0-45-45H45A45 45 0 0 0 0 45zm387.5 530.5h-27L288 477l.5 98.5h-72v-71.37h-72v71.37h-27a45 45 0 0 1-45-45V117a45 45 0 0 1 45-45h270a45 45 0 0 1 45 45v413.5a45 45 0 0 1-45 45z" fill="#333"/>
+              <path d="M144.5 189v242.5h72v-73h72L360 460l.43-270.93A45 45 0 0 0 315.5 144h-126a45 45 0 0 0-45 45zm144 98.5h-72v-72h72z" fill="#333"/>
+            </svg>
+        </figure>
+    
+        <figure class="card-back card">
+          <div class="card__home">
+
+            <!-- Card DETAILS -->
+            <img src="./img/about/infoCard.png" alt="infoCard" class="infoCard detail-card">
+            <img src="./img/about/workCard.png" alt="workCard" class="workCard detail-card">
+            <img src="./img/about/infoSkill.png" alt="skillCard" class="skillCard detail-card">
+
+            <div class="card__home--info">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304.64 304.64" class="svginfo">
+                <circle cx="152.32" cy="152.32" r="152.32" fill="#545554" class="svginfo-1"/>
+                <path d="M195.38 101.64c0 23.7-19.35 54.77-43.06 54.77s-43-30.79-43-54.77a43.06 43.06 0 1 1 86.11-1.31c-.04.43-.04.87-.05 1.31zm-43.06 70.57c-36 0-66.21 22.07-76 52.32-3.33 10.32 4.34 21.25 15.24 21.25h121.53c10.63 0 18.53-10.35 15.53-20.43-9.81-30.79-40.33-53.14-76.3-53.14z" fill="#ffe8d5" class="svginfo-2"/>
+              </svg>
+              <span class="span-info">INFORMATION</span>
+            </div>
+            <div class="card__home--detail">
+    
+            </div>
+            <div class="card__home--work">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304.64 304.64" class="svgwork">
+                <circle cx="152.32" cy="152.32" r="152.32" fill="#545554" class="svgwork-1"/>
+                <path d="M114.64 81.62v18.86h10.29v-9.8a6.76 6.76 0 0 1 6.75-6.76h41.11a6.76 6.76 0 0 1 6.75 6.76v9.8h10.29V81.62a6.76 6.76 0 0 0-6.75-6.77H121.4a6.76 6.76 0 0 0-6.76 6.76zM58.08 156v64.1a9.38 9.38 0 0 0 9.36 9.38h171.73a9.38 9.38 0 0 0 9.37-9.38V156l-34.66 9.64a224.72 224.72 0 0 1-119.09.34z" fill="#ffe8d5" class="svgwork-2"/>
+                <path d="M96.92 100.48H67.45a9.38 9.38 0 0 0-9.37 9.37v39.07l36.71 10 2.13.56zM199.34 100.48h-92.06v61.44a224.65 224.65 0 0 0 92.06.17zM209.7 100.48v59.2c1.4-.36 2.79-.73 4.18-1.11l34.66-9.64v-39.08a9.38 9.38 0 0 0-9.36-9.38H209.7z" fill="#ffe8d5" class="svgwork-2"/>
+              </svg>
+              <span class="span-work">WORK EXPERIENCE</span>
+            </div>
+            <div class="card__home--skill">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304.64 304.64" class="svgskill">
+                <circle cx="152.32" cy="152.32" r="152.32" fill="#545554" class="svgskill-1"/>
+                <path d="M231.72 76.08l-108.96 145.7-13.62 28.97 23.95-21.25L242.04 83.81z" fill="#ffe8d5" class="svgskill-2"/>
+                <path d="M119.59 218.07l24.4-32.61c-207.29 29.47-36.17 64.6-36.17 64.6-9.56-18.02-18.34-21.44 11.77-31.99zm104.59-79.84s129.09 15.43-48.83 42.72l-19.25 25.74c16.63-4.92 37.72-11 64.3-18.93 140.98-41.91 3.78-49.53 3.78-49.53zm32.1512-73.5326l-7.5938 10.1546-10.3308-7.7256L246 56.9718a2.56 2.56 0 0 1 3.5833-.517l6.2305 4.6594a2.56 2.56 0 0 1 .5174 3.5832z" fill="#ffe8d5" class="svgskill-2"/>
+              </svg>
+              <span class="span-skill">SKILLS</span>
+            </div>
+          </div>
+        </figure>
+
+    </figure>
+  </div>
+
+  <script src="./js/about.js"></script>
+</body>
+</html>

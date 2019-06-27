@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before { 
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is, so not Typograpthy
+  font-size: 62.5%; /* .625x16px = 10px */
+  
+  //MEDIA QUERY
+  @include respond(tab-land) { // width < 900?
+    font-size: 56.25%; // If want 1 rem = 9px, 9/16 = 56.25%
+  }
+
+  @include respond(tab-port) { // width less than 600?
+    font-size: 50%; // If want 1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(phone) { // width less than 600?
+    font-size: 30%; // If want 1 rem = 4.8px, 4.8/16 = 30%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; // If want 1 rem = 12px, 12/16 = 75%
+  }
+}
+
+body {
+  box-sizing: border-box;
+}

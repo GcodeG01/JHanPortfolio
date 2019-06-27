@@ -1,0 +1,52 @@
+.gallery {
+  z-index: 1;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  
+  opacity: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__box {
+    position:fixed;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  &__arrow {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    & * {
+      height: 7rem;
+
+      filter: opacity(.5);
+      transition: all .3s;
+
+      &:hover {
+        filter: opacity(1);
+      }
+    }
+  }
+
+  &__img {
+    z-index: 2;
+    position: absolute;
+    max-width: 80%;
+    max-height: 80%;
+    display: none;
+
+    transform: scale(.5);
+  }
+}

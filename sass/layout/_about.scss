@@ -1,0 +1,108 @@
+.body-about {
+   background-color: rgb(245, 245, 245);
+}
+
+.flip-card {
+   @include absCenter;
+   height: 50rem;
+   width: 100rem;
+   perspective: 1500px;
+
+   background-color: transparent;
+}
+
+.flip-card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   
+   transform-style: preserve-3d;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card-front, .card {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+}
+
+.card-front {
+   background-color: #ff4d4d;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   & * {
+      margin-right: 10rem;
+      height: 15rem;
+      font-size: 15rem;
+
+      color: #ffe8d5;
+
+      display: flex;
+      align-items: center;
+   }
+}
+
+.card {
+   overflow: hidden;
+
+   transform: rotateY(180deg);
+
+   &__home {
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+
+      & * {
+         font-size: 6rem;
+         font-weight: 700;
+         letter-spacing: 10px;
+         cursor: pointer;
+
+         display: flex;
+         align-items: center;
+
+         & * {
+            margin-left: 10rem;
+            color: #ffe8d5;
+            height: 8rem;
+         }
+      }
+
+      &--info {
+         height: 33.3333333333%;
+
+         background-color: #ff4d4d;
+      }
+
+      &--work {
+         height: 33.3333333333%;
+         
+         background-color: #ff8364;
+      }
+
+      &--skill {
+         height: 33.3333333333%;
+         
+         background-color: #ffb471;
+      }
+   }
+}
+
+.detail-card {
+   position: absolute;
+   margin: 0;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+
+   display: none;
+}

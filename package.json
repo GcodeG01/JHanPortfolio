@@ -1,0 +1,19 @@
+{
+  "name": "jhanportfolio",
+  "version": "1.0.0",
+  "description": "Joseph Han Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss -w",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Joseph Han",
+  "license": "ISC",
+  "homepage": "https://GcodeG01.github.io/portfolio",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

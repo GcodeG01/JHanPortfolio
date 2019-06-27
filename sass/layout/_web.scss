@@ -1,0 +1,45 @@
+.web-design {
+   margin-left: 10rem;
+   font-size: 5rem;
+}
+
+.web-project {
+   margin-left: 10rem;
+   font-size: 5rem;
+}
+
+.line-break {
+   margin-top: 1rem;
+   margin-left: auto;
+   margin-right: auto;
+   height: .5rem;
+   width: 90%;
+}
+
+.design-grid {
+   margin: 7rem 10rem 7rem 10rem;
+   
+   object-fit: cover;
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+   grid-gap: 4rem;
+}
+
+.slot {
+   position: relative;
+   cursor: pointer;
+
+   & * {
+      width: 100%;
+   }
+
+   span {
+      position: absolute;
+      text-align: center;
+      bottom: 0;
+      font-size: 4rem;
+
+      color: #fff;
+      opacity: 0;
+   }
+}
